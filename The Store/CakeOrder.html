@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place an Cake Order</title>
+    <link rel="stylesheet" href="CakeOrder.css">
+</head>
+
+<body>
+    <center>
+        <div class="main">
+        <header>
+            <div class="headerbox">
+                <div class="titlebox">
+                    <h1>Rising Tide</h1>
+                </div>
+                <div class="headnavbox">
+                    <div class="optionbox">
+                        <a href="Store.html">Home</a>
+                    </div>
+                    <div class="optionbox">
+                        <a href="TideOrder.html">Order</a>
+                    </div>
+                    <div class="optionbox">
+                        <a href="Blog.html">Blog</a>
+                    </div>
+                    <div class="optionbox">
+                        <a href="About.html">About</a>
+                    </div>
+                    <div class="optionbox">
+                        <a href="Contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="rule"></div>
+        <img src="Tide2 Photos/MainIce.png" class="mainice">
+
+        
+        <div class="container">
+            <div class="mainhead">
+                <h1>Place an Order</h1>
+                <a href="TideOrder.html">
+                    <div class="buttonbox">
+                        <h1>Return</h1>
+                    </div>
+                </a>
+            </div>
+                
+            <div class="cutcont" id="light"></div>
+        
+            <div class="cutcont">
+                <br>
+                <br>
+                <div class="infobox">
+                    <h1>Order Information</h1>
+                    <p>Please fill out all required boxes. <br><br> The order must be paid for in-store with cash, debt, or credit</p>
+                </div>
+
+                <div class="OrderBox">                
+
+
+                    <form action="cake_process_order.php" method="post">
+                
+                        <div class="OrderBox2">
+                            <h1>Order a Cake</h1>
+
+
+                            <div class="OrderBox3">
+                                <h2>First Name</h2>
+                                <input type="text" name="FirstName" id="FirstName">
+                            </div>
+                            <div class="OrderBox3">
+                                <h2>Last Name</h2>
+                                <input type="text" name="LastName" id="LastName">
+                            </div>
+                            <div class="OrderBox3">
+                                <h2>Phone Number</h2>
+                                <input type="text" name="PhoneNumber" id="PhoneNumber">
+                            </div>
+                            <div class="OrderBox3">
+                                <h2>Size</h2>
+                                <select name="Size" id="Size">
+                                    <option value="Small">6</option>
+                                    <option value="Medium">7</option>
+                                    <option value="Large">8</option>
+                                </select>
+                            </div>
+                            <div class="OrderBox3">
+                                <h2>Flavour</h2>
+                                <select name="Flavour" id="Flavour">
+                                    <option value="Chocolate">Chocolate</option>
+                                    <option value="Vanilla">Vanilla</option>
+                                    <option value="Strawberry">Strawberry</option>
+                                    <!-- Add more flavor options as needed -->
+                                </select>
+                                <br>
+                                <br>
+                                <input type="submit" name="submit" value="Place Order">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        
+            <div class="footbox">
+                <div class="footleft"></div>
+                <div class="footright"></div>
+            </div>
+        </div>
+        </center>
+    </body>
+</html>
