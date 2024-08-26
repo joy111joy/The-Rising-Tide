@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +14,480 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+  header {
+    background-color: #282c34;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    margin-top: -100px;
+    z-index: 1;
+    
+  }
+  .HeadTop {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-image: url('../public/imgs/Wood.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 195, 183, 0.8); /* White color with 70% opacity */
+    z-index: 1; /* Above the background image */
+  }
+  
+  .Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 2; /* Above the overlay */
+
+  }
+
+  .HeadTop a {
+    color: White;
+    font-family: Acme;
+    letter-spacing: 2px;
+    font-size: 45pt;
+    text-decoration: none;
+  }
+  
+  
+  .HeadBottom {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #00ABA0;
+    background-image: url('../public/imgs/Wood.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 10px  #000000;
+  }
+  
+  .HeadBottom .Overlay {
+    background-color: rgba(1, 158, 148, 0.8); /* Adjust color and opacity as needed */
+  }
+
+
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 25vw; /* Adjust spacing between links */
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 45px;
+    font-family: Acme;
+  }  
+
+  @media screen and (max-width: 1050px) {
+    .HeadTop a {
+      font-size: 30pt;
+    }
+    nav a {
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    nav {
+      gap: 15vw;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    
+    .HeadTop a {
+      font-size: 20pt;
+    }
+    nav a {
+      font-size: 25px;
+    }
+  }
+
+
+
+
+
+  /* Banner Styling */
+
+  #Banner {
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    height: 700px;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url('../public/imgs/IceCreamBack.webp');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;    
+  }
+
+  #Banner img {
+    z-index: 2;
+  }
+  .OverlayBanner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 250, 197, 0.8); /* White color with 70% opacity */
+    z-index: 1; /* Above the background image */
+  }
+
+
+  .BannerText {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #94FF6F;
+    font-family: Acme;  
+    font-size: 40pt;
+    -webkit-text-stroke: 0.5px #00958C;
+    z-index: 2;
+  }
+
+  
+ @media screen and (max-width: 1341px) {
+   #Banner {
+      height: 600px;
+      margin-top: 120px;
+    }
+    header {
+      margin-top: -120px;
+    }
+   
+    .BannerText {
+      font-size: 30pt;
+    }
+  }
+
+  @media screen and (max-width: 1050px) {
+    #Banner {
+      height: 500px;
+    }
+    .BannerText {
+      font-size: 25pt;
+    }
+    .BannerText a {
+      scale: 0.8;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    #Banner {
+      height: 400px;
+      margin-top: 150px;
+    }
+    header {
+      margin-top: -150px;
+    }
+
+    .BannerText a, .BannerText h2 {
+      margin-left: 50px;
+      text-wrap: nowrap;
+    }
+
+  }
+  
+ @media screen and (max-width: 725px) {
+    #BannerPic {
+      display: none;
+    }
+    .BannerText {
+      width: 100%;
+      height: 100%;
+      font-size: 25pt;
+    }
+
+    .BannerText a, .BannerText h2 {
+      margin-left: 0px;
+    }
+ }
+
+
+ @media screen and (max-width:475px) {
+  .BannerText {
+    font-size: 7vw;
+  }
+
+  .BannerText img {
+    scale: 0.8;
+  }
+ }
+
+  /* Home Cont Styling */
+
+  #HomeCont {
+    width: 100%;
+    height: auto;
+    background-color: #00ABA0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+
+  .HomeSect {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #94FF6F;
+    font-family: Acme;  
+    font-size: 30pt;
+    -webkit-text-stroke: 0.5px #00958C;
+    margin-top: 150px;
+  }
+
+  .HomeSect div {
+    margin-right: -500px;
+    width: 50%;
+  }
+
+  #AltHomeSect div {
+    margin-right: 300px;
+    width: 50%;
+  }
+  #AltHomeSect img {
+    position: absolute;
+    right: 0px;
+    margin-top: 200px;
+    height: 900px;
+    float: right;  }
+  
+  .StickBox {
+    position: absolute;
+    height: 700px;
+    width: 50%;
+    top: 990px;
+    display: flex;
+  }
+
+  .StickBox img {
+    height: 120%;
+    float: left;
+  }
+
+  .FinalHomeSect {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #94FF6F;
+    font-family: Acme;  
+    font-size: 30pt;
+    -webkit-text-stroke: 0.5px #00958C;
+    margin-top: 150px;
+  }
+
+  .FinalHomeSect div {
+    width: 80%;
+  }
+
+  #OneCake {
+    display: none;
+  }
+
+  @media screen  and (max-width: 1325px) {
+    .HomeSect {
+      font-size: 25pt;
+    }
+    .HomeSect div {
+      width: 50%;
+      margin-right: -400px;
+    }
+    #AltHomeSect div {
+      margin-right: 300px;
+      width: 50%;
+    }
+    #AltHomeSect img {
+      height: 800px;
+    }
+    .StickBox {
+      height: 600px;
+    }
+    .StickBox img {
+      height: 100%;
+    }
+    .FinalHomeSect {
+      font-size: 25pt;
+    }
+    .FinalHomeSect div {
+      width: 70%;
+    }
+    
+  }
+
+  @media screen and (max-width: 1050px) {
+    .HomeSect {
+      font-size: 20pt;
+    }
+    .HomeSect div {
+      width: 50%;
+      margin-right: -300px;
+    }
+
+    #AltHomeSect div {
+      margin-right: 300px;
+      width: 50%;
+    }
+
+    .HomeSect p, #AltHomeSect p {
+      text-align: left;
+    }
+    #AltHomeSect img {
+      height: 600px;
+      margin-top: 50px;
+    }
+    .StickBox {
+      height: 500px;
+      margin-top: -200px;
+
+    }
+    .StickBox img {
+      height: 100%;
+    }
+    .FinalHomeSect {
+      font-size: 20pt;
+    }
+    .FinalHomeSect div {
+      width: 60%;
+    }
+
+  }
+
+  @media screen and (max-width: 770px) {
+    .HomeSect {
+      font-size: 20pt;
+      flex-direction: column;
+      
+    }
+    .HomeSect div {
+      width: 50%;
+      margin-right: -200px;
+    }
+
+
+
+    #AltHomeSect div {
+      margin-right: 300px;
+      width: 50%;
+    }
+
+    #AltHomeSect p {
+      text-align: left;
+    }
+    #AltHomeSect img {
+      height: 500px;
+      margin-top: 50px;
+    }
+    .StickBox {
+      height: 400px;
+      margin-top: -200px;
+
+    }
+    .StickBox img {
+      height: 100%;
+    }
+    .FinalHomeSect {
+      font-size: 15pt;
+    }
+    .FinalHomeSect div {
+      width: 50%;
+    }
+    
+  }
+
+  @media screen and (max-width: 600px) {
+    .HomeSect {
+      font-size: 15pt;
+    }
+    .HomeSect div {
+      width: 50%;
+      margin-right: -170px;
+    }
+
+    #AltHomeSect div {
+      margin-right: 200px;
+      width: 50%;
+    }
+
+    #AltHomeSect p {
+      text-align: left;
+    }
+    #AltHomeSect img {
+      height: 400px;
+      margin-top: 50px;
+    }
+    .StickBox {
+      height: 300px;
+      margin-top: -200px;
+
+    }
+    .StickBox img {
+      height: 100%;
+    }
+    .FinalHomeSect {
+      font-size: 15pt;
+    }
+    .FinalHomeSect div {
+      width: 50%;
+    }
+    
+  }
+
+  @media screen and (max-width: 460px) {
+    #AltHomeSect img {
+      display: none;
+    }
+    .StickBox {
+      display: none;
+    }
+
+    .HomeSect div {
+      width: 80%;
+      margin-right: 0px;
+    }
+
+    #AltHomeSect div {
+      margin-right: 0px;
+      width: 80%;
+    }
+
+    #OneCake {
+      display:block;
+      width: 100%;
+      height: 400px;
+      background-color: #282c34 ;
+    }
+  }
