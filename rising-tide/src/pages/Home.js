@@ -8,7 +8,8 @@ const Home = () => {
 
         <section id='HomeCont'>
         <div className='StickBox'>
-                    <img src='/imgs/ICTrio4.png' alt='Strawberry Ice Cream Cone' id='Flurry'></img>
+                    <img src='/imgs/ICTrioWStraw.png' alt='Strawberry Ice Cream Cone' id='Trio' ></img>
+                    <img src='/imgs/ICNachos.png' alt='Vanilla Ice Cream Cone' id='Nachos' ></img>
                 </div>
             <div className='HomeSect'>
 
