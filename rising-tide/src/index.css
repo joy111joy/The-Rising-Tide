@@ -146,8 +146,9 @@ code {
     background-size: cover;
     background-position: center;
     z-index: 0;    
+    overflow: hidden;
   }
-
+  
   #Banner img {
     z-index: 2;
   }
@@ -260,57 +261,61 @@ code {
   .HomeSect {
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     color: #94FF6F;
     font-family: Acme;  
-    font-size: 30pt;
+    font-size: 3vw;
     -webkit-text-stroke: 0.5px #00958C;
-    margin-top: 150px;
+    margin-top: 50px;
   }
 
-  .HomeSect div {
-    margin-right: -500px;
+  @media screen and (min-width: 1500px) {
+    .HomeSect {
+      font-size: 30pt;
+    }
+  }
+  .FirstText {
     width: 50%;
+    margin-left: 10vw;
+    margin-right: 50px;
   }
 
-  #AltHomeSect div {
-    margin-right: 300px;
-    width: 50%;
-  }
-  #AltHomeSect img {
-    position: absolute;
-    right: 0px;
-    margin-top: 200px;
-    height: 900px;
-    float: right;  }
+
   
   .StickBox {
-    position: absolute;
     height: 700px;
-    width: 50%;
-    top: 990px;
+    max-width: 50%;
     display: flex;
+    align-items: center;
   }
 
   .StickBox img {
-    height: 150%;
-    margin-top: -100px;
-    float: left;
+    width: 100%;
+    height:fit-content;
   }
+
+  #AltHomeSect {
+    justify-content: space-between;
+  }
+
 
   .FinalHomeSect {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #94FF6F;
     font-family: Acme;  
-    font-size: 30pt;
+    font-size: 6vw;
     -webkit-text-stroke: 0.5px #00958C;
     margin-top: 150px;
+    color: #94FF6F;
   }
 
+  @media screen and (min-width: 1300px) {
+    .FinalHomeSect {
+      font-size: 50pt;
+    }
+  }
   .FinalHomeSect div {
     width: 80%;
   }
@@ -318,196 +323,189 @@ code {
   #OneCake {
     display: none;
   }
-
-  #Nachos {
+  #MobileImages {
     display: none;
   }
 
+ 
 
-  @media screen  and (max-width: 1325px) {
-    .HomeSect {
-      font-size: 25pt;
-    }
-    .HomeSect div {
-      width: 50%;
-      margin-right: -400px;
-    }
-    #AltHomeSect div {
-      margin-right: 300px;
-      width: 50%;
-    }
-    #AltHomeSect img {
-      height: 800px;
-    }
-    .StickBox {
-      height: 700px;
-    }
-    .StickBox img {
-      height: 100%;
-    }
-    .FinalHomeSect {
-      font-size: 25pt;
-    }
-    .FinalHomeSect div {
-      width: 70%;
-    }
-    
-  }
-
-  @media screen and (max-width: 1050px) {
-    .HomeSect {
-      font-size: 20pt;
-    }
-    .HomeSect div {
-      width: 50%;
-      margin-right: -300px;
-    }
-
-    #AltHomeSect div {
-      margin-right: 300px;
-      width: 50%;
-    }
-
-    .HomeSect p, #AltHomeSect p {
-      text-align: left;
-    }
-    #AltHomeSect img {
-      height: 600px;
-      margin-top: 50px;
-    }
-    .StickBox {
-      height: 500px;
-      margin-top: -200px;
-
-    }
-    .StickBox img {
-      height: 600px;
-    }
-    .FinalHomeSect {
-      font-size: 20pt;
-    }
-    .FinalHomeSect div {
-      width: 60%;
-    }
-
-  }
-
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 950px) {
     .HomeSect {
       font-size: 20pt;
       flex-direction: column;
-      
-    }
-    .HomeSect div {
-      width: 50%;
-      margin-right: -200px;
     }
 
-
-
-    #AltHomeSect div {
-      margin-right: 300px;
-      width: 50%;
-    }
-
-    #AltHomeSect p {
-      text-align: left;
-    }
-    #AltHomeSect img {
-      height: 500px;
-      margin-top: 50px;
-    }
     .StickBox {
-      height: 400px;
-      margin-top: -100px;
-
-    }
-    .StickBox img {
-      height: 500px;
-    }
-    .FinalHomeSect {
-      font-size: 15pt;
-    }
-    .FinalHomeSect div {
-      width: 50%;
-    }
-    
-  }
-
-  @media screen and (max-width: 600px) {
-    .HomeSect {
-      font-size: 15pt;
-    }
-    .HomeSect div {
-      width: 50%;
-      margin-right: -170px;
-    }
-
-    #AltHomeSect div {
-      margin-right: 200px;
-      width: 50%;
-    }
-
-    #AltHomeSect p {
-      text-align: left;
-    }
-    #AltHomeSect img {
-      height: 400px;
-      margin-top: 50px;
-    }
-    .StickBox {
-      height: 300px;
-      margin-top: -200px;
-
-    }
-    .StickBox img {
-      height: 100%;
-    }
-    .FinalHomeSect {
-      font-size: 15pt;
-    }
-    .FinalHomeSect div {
-      width: 50%;
-    }
-    
-  }
-
-  @media screen and (max-width: 460px) {
-    #AltHomeSect img {
       display: none;
-    }
-    #Trio {
-      display: none;
-    }
-
-    #Nachos {
-      display: block;
-      height: 200px;
-      width: 300px;
-    }
-    .StickBox {
-      position: absolute;
-      margin-top: 150px;
-      left: 25%;
+    } 
+    #MobileImages {
       display: flex;
       justify-content: center;
-    }
-
-    .HomeSect div {
-      width: 80%;
-      margin-right: 0px;
-      margin-top: -100px;
-    }
-
-    #AltHomeSect div {
-      margin-right: 0px;
-      width: 80%;
-    }
-
-    #OneCake {
-      display:block;
+      align-items: flex-end;
       width: 100%;
-      height: 400px;
-      background-color: #282c34 ;
+      height: 60vw;  
+      
+      background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+      url('../public/imgs/Beach.png');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    #AltHomeSect #MobileImages {
+      background-image: none;
+      background-color: #00958C;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 4vw;
+    }
+
+  
+
+    #Stick {
+      width: 45%;
+    }
+    #Flurry {
+      width: 50%;
+    }
+    #StrawCake {
+      width: 80%;
+    }
+
+    .FirstText {
+      width: 80%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .FinalHomeSect {
+      margin-top: 50px;
+      font-size: 8vw;
     }
   }
+
+
+  /* Footer Styling */
+
+  footer {
+    width: 100%;
+    height: 300px;
+    background-color: #00958C;
+    box-shadow: 0 -5px 0 0 #00665f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: Acme;
+    font-size: 20pt;
+  }
+
+  footer a {
+    color: white;
+  }
+
+  #FootLogo {
+    padding-left: 50px;
+    height: 80%;
+  }
+
+  #Facebook {
+    height: 50%;
+  }
+
+  #Socials {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 50px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    footer {
+      height: 200px;
+    }
+    #FootInfo {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      line-height: 10px;
+    }
+    #FootInfo a {
+      margin: 10px;
+    }
+    #FootInfo p {
+      margin: 15px;
+    }
+    #Socials {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding-right: 50px;
+    }
+    #Facebook {
+      margin-top: -30px;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    footer {
+      height: 30vw;
+    }
+    #FootInfo {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 10px;
+      font-size: 3vw;
+      padding-left: 20px;
+      text-align: left;
+    }
+    #FootInfo a {
+      margin: 10px;
+    }
+    #FootInfo p {
+      margin: 15px;
+    }
+    #Socials {
+      height: 100%;
+      padding-right: 20px;
+      justify-content: center;
+      font-size: 3vw;
+    }
+    #Facebook {
+      height: 10vw;
+      margin-top: 0;
+    }
+    #FootLogo {
+      height: 20vw;
+      display: none;
+    }
+  }
+@media screen and (max-width: 620px) {
+  footer {
+    height: 40vw;
+  }
+  #FootInfo {
+    font-size: 4vw;
+  }
+  #Socials {
+    font-size: 4vw;
+    padding: 0;
+  }
+  #Socials h2 {
+    display: none;
+  }
+  #Facebook {
+    height: 20vw;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #FootInfo p{
+    margin: 5px ;
+    
+  }
+}

@@ -7,26 +7,27 @@ const Home = () => {
         <Banner />
 
         <section id='HomeCont'>
-        <div className='StickBox'>
-                    <img src='/imgs/ICTrioWStraw.png' alt='Strawberry Ice Cream Cone' id='Trio' ></img>
-                    <img src='/imgs/ICNachos.png' alt='Vanilla Ice Cream Cone' id='Nachos' ></img>
-                </div>
-            <div className='HomeSect'>
 
-                <div>
-                    <h2>Delicious Home-made Treats</h2>
-                    <p> Ice cream is more than just a dessert for us; it’s our passion and specialty. 
-                        We take pride in creating a range of treats that bring joy to every bite. 
-                        From cones to cookie sandwiches, our treats will satisfy any sweet tooth.
-                        <br /> <br />
-                        Every day, our skilled team works in-store to prepare these delectable treats.
-                        With a selection of flavors, we have ice cream for every kind 
-                        of ice cream lover.
-                    </p>
+            <div className='HomeSect'>
+            <div className='StickBox'>
+                    <img src='/imgs/ICTrioWStraw.png' alt='Vanilla Ice Cream Cone' id='Trio' ></img>
+                
+                </div>
+                <div className='FirstText'>
+                <h2>Delicious Home-made Treats</h2>
+                    <p>Ice cream is our passion. We create a variety of treats, from cones to cookie sandwiches, 
+                        to delight every sweet tooth. Prepared fresh daily, our in-store team offers a selection
+                         of flavors for every ice cream lover.</p>
+
+                </div>
+                <div id='MobileImages'>
+                    <img src='/imgs/Flurry.png' alt='Ice Cream Sandwich' id='Flurry'></img>
+
+                    <img src='/imgs/StrawStick.png' alt='Vanilla Ice Cream Cone' id='Stick' ></img>
                 </div>
             </div>
             <div className='HomeSect' id='AltHomeSect'>
-                <div>
+                <div className='FirstText'>
                     <h2>Ice Cream Cakes for any Occasion</h2>
                     <p>Birthdays, Anniversaries, or just because, our ice cream cakes are perfect for any occasion. 
                         We offer many flavours, designs, and sizes to quench your cake cravings.
@@ -37,9 +38,15 @@ const Home = () => {
                         we can have your cake ready for you.
 
                     </p>
-                </div>
 
-                <img src='/imgs/Cakes.png' alt='Ice Cream Cake'></img>
+                </div>
+                    <div className='StickBox'>
+                        <img src='/imgs/Cakes.png' alt='Ice Cream Cake' id='Cake'></img>   
+                    </div>
+                    <div id='MobileImages'>
+                    <img src='/imgs/StrawDeluxe.png' alt='Ice Cream Cake' id='StrawCake'></img>
+                    <h2>Strawberry Shortcake Deluxe</h2>
+                    </div>
             </div>
             <div className='FinalHomeSect'>
                 <div>
