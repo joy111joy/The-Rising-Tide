@@ -4,7 +4,7 @@ import Banner from '../components/Banner';
 const Home = () => {
   return (
     <div id='home'>
-        <Banner />
+        <Banner page='Home'/>
 
         <section id='HomeCont'>
 

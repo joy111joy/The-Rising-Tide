@@ -8,14 +8,14 @@ const Header = () => {
         <div className='HeadTop'>
             <div className='Overlay'></div>
             <div className='Content'>
-            <Link>Rising Tide Convenience</Link>
+            <Link to="/">Rising Tide Convenience</Link>
             </div>
         </div>
         <div className='HeadBottom'>
             <div className='Overlay'></div>
             <div className='Content'>
                 <nav>
-                        <Link>Treats</Link>
+                        <Link to="/Treats">Treats</Link>
                         <Link>Order</Link>
                         <Link>About</Link>
                 </nav>
